@@ -1,0 +1,358 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  margin-top: 0px;
+  padding: 0px;
+}
+section {
+  padding: 0px;
+  margin: 0px;
+}
+container {
+  width: 1200px;
+  padding: 0px 120px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Nav Bar */
+.navWrapper {
+  border-bottom: 0.5px solid #ff5b5b;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+.navContainer {
+  margin: 0px -120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0px 20px;
+}
+.navLink {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: Inter;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+.navContainer button {
+  display: flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #f00;
+  border: 0px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+/* HeroSection */
+.heroSection {
+  margin-top: -75px;
+  background-image: url("images/heroBg.png");
+  display: flex;
+  object-fit: fill;
+  position: relative;
+}
+.heroContent {
+  padding: 270px 0px 480px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.heroHeading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.heroHeading img {
+  margin: 0px auto;
+  width: 35%;
+}
+.heroHeading h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118.9%; /* 72.091px */
+  letter-spacing: -0.606px;
+}
+.heroBtns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.btnPrimary {
+  display: inline-flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f00;
+  border: 0px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.btnSecondary {
+  display: inline-flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  border: 1px solid #f00;
+  background: rgba(0, 0, 0, 0.2);
+  color: #f00;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.wave {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* Product Section */
+.productSection {
+  margin-top: 90px;
+  padding: 90px 0px;
+  color: #fff;
+}
+.productSectionWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.productSectionWrapper h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.productSectionWrapper span {
+  color: #2d9cdb;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.productSectionWrapper h4 {
+  width: 100%;
+  margin-top: 10px;
+  color: var(--grey-30, #4c4c4c);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.productSectionHead {
+  width: 100%;
+}
+.productView {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.product {
+  height: 450px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  position: relative;
+}
+.productInfo {
+  width: 93%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  background: rgba(22, 22, 22, 0.5);
+  backdrop-filter: blur(6px);
+  position: absolute;
+  bottom: 0px;
+}
+.productInfoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.productInfoLeft h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 24px */
+}
+.productInfoLeft h4 {
+  color: var(--gray-4, #bdbdbd);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 21px */
+}
+.productInfoRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.productInfoRight h3 {
+  color: #2d9cdb;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+.productInfoRight span {
+  color: var(--gray-5, #e0e0e0);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+}
+.productInfoRight a {
+  color: var(--red, #eb5757);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 16px */
+  text-decoration-line: underline;
+}
+.more {
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Services Section */
+.servicesSection {
+  width: 100%;
+  margin-top: 90px;
+  padding: 90px 0px;
+}
+.serviceSectionWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.serviceSectionWrapper h1 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.serviceSectionWrapper span {
+  color: #2d9cdb;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.serviceSectionWrapper h4 {
+  width: 100%;
+  margin-top: 10px;
+  color: var(--grey-30, #4c4c4c);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.serviceSectionHead {
+  width: 100%;
+}
+.serviceView {
+  margin-top: 60px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.serviceViewTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.solarService {
+  height: 350px;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("images/solarService.jpg"), lightgray 50% / cover no-repeat;
+
+  /* background-image: url("images/solarService.jpg"); */
+  position: relative;
+}
+.windService {
+  height: 350px;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  background-image: url("images/windServices.png");
+  object-fit: fill;
+  position: relative;
+}
+.hybridService {
+  height: 350px;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  background-image: url("/images/hybrudService.png");
+  object-fit: fill;
+  position: relative;
+}
