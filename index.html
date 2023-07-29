@@ -21,15 +21,15 @@
     <!-- Nav Bar -->
     <container class="navWrapper">
         <div class="navContainer">
-            <img src="images/navLogo.svg">
+            <img src="images/navLogo.png">
             <div class="navLinks">
                 <h4 class="navLink">About Us</h4>
-                <h4 class="navLink">Achivements</h4>
-                <h4 class="navLink">Products</h4>
-                <h4 class="navLink">Blog</h4>
+                <!-- <h4 class="navLink">Achivements</h4> -->
+                <a href="#products"><h4 class="navLink">Products</h4></a>
+                <!-- <h4 class="navLink">Blog</h4> -->
             </div>
             <div>
-                <button>Contact Us</button>
+                <a href="#footer"><button onclick="#footer">Contact Us</button></a>
             </div>
         </div>
     </container>
@@ -39,11 +39,11 @@
         <container>
             <div class="heroContent">
                 <div class="heroHeading">
-                    <img src="images/LogoHero.svg">
+                    <img src="images/heroLogo.png">
                     <h1>Sustainable Power Solutions</h1>
                 </div>
                 <div class="heroBtns">
-                    <button class="btnPrimary">Our Solutions</button>
+                    <a href="#products"><button class="btnPrimary">Our Solutions</button></a>
                     <button class="btnSecondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <g clip-path="url(#clip0_77_114)">
                         <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -62,7 +62,7 @@
     </section>
 
     <!-- Product Section -->
-    <section class="productSection">
+    <section id="products" class="productSection">
         <container>
             <div class="productSectionWrapper">
                 <div class="productSectionHead">
@@ -70,28 +70,27 @@
                     <h4>Take a look at our world class solutions for Clean and Green energy.</h4>
                 </div>
                 <div class="productView">
-                    <div class="product">
-                        andfjlkn
+                    <div class="product powerWatt">
                         <div class="productInfo">
                             <div class="productInfoLeft">
                                 <h2>Pocket Watt</h2>
                                 <h4>Portable power bank</h4>
                             </div>
                             <div class="productInfoRight">
-                                <h3><span>from  </span> Rs. 3200</h3>
+                                <h6>from Rs. 3200</h6>
                                 <a href="">View Brochure →</a>
                             </div>
                         </div>   
                     </div>
-                    <div class="product">
+                    <div class="product hybridWindmill">
                         andfjlkn
                         <div class="productInfo">
                             <div class="productInfoLeft">
-                                <h2>Pocket Watt</h2>
-                                <h4>Portable power bank</h4>
+                                <h2>Hybrid Windmills</h2>
+                                <h4>Windmills with solar panels</h4>
                             </div>
                             <div class="productInfoRight">
-                                <h3><span>from  </span> Rs. 3200</h3>
+                                <h3><span>for price  </span> enquire</h3>
                                 <a href="">View Brochure →</a>
                             </div>
                         </div>   
@@ -113,17 +112,86 @@
                 <div class="serviceView">
                     <div class="serviceViewTop">
                         <div class="solarService">
-                            
+                            <div class="serviceInfo">
+                                <div class="productInfoLeft">
+                                    <h2>Solar Services</h2>
+                                    <h4>Solar Panels installation</h4>
+                                </div>
+                                <div class="productInfoRight">
+                                    <a href="#footer">Contact for info →</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="windService">
-                            
+                            <div class="serviceInfo">
+                                <div class="productInfoLeft">
+                                    <h2>Wind Services</h2>
+                                    <h4>Windmills installation</h4>
+                                </div>
+                                <div class="productInfoRight">
+                                    <a href="#footer">Contact for info →</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="hybridService">
-                            
+                        <div class="serviceInfo1">
+                            <div class="productInfoLeft">
+                                <h2>Solar + Wind hybrid Services</h2>
+                                <h4>Windmills with solar panels installed</h4>
+                            </div>
+                            <div class="productInfoRight">
+                                <a href="#footer">Contact for info →</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>  
+            </div>
+        </container>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" class="footer">
+        <container>
+            <div class="footerContainer">
+                <div class="footerSubcontainerLeft">
+                    <div class="footerSubcontainerLeftHead">
+                        <img src="images/navLogo.png" alt="PowerZest logo">
+                        <p><span>Regd. Office:</span> 22/B21, Sagar Sangam Soc, Lokhandwala, Kandivali(E), Mumbai-400101, India <br>
+                            <span>Workshop:</span> 11, Tirthankar Compound, Gotewadi, Gogate Wadi Rd, Goregaon, Mumbai, Maharashtra 400063</p>
+                    </div>
+                    <div class="socialMediaContainer">
+                        <p>Follow us on</p>
+                        <img src="images/yt.png" alt="">
+                        <img src="images/Linkedin.png" alt="">
+                        <img src="images/instagram.png" alt="">
+                        <img src="images/twitter.png" alt="">
                     </div>
                 </div>
-                
+                <div class="footerSubContainerRight">
+                    <div>
+                        <h3>Want to work together</h3>
+                        <div class="mailInput">
+                            <form method="post" name="work_form"
+                            action="contact-form-handler.php">
+                            <input type="email" name="email" placeholder="hello@mail.com"> 
+                            <input class="submitBtn" type="submit" value="→"> 
+                            </form>
+                        </div>    
+                    </div>
+                    <div>
+                        <h3>Subscribe to our Newsletter</h3>
+                        <div class="mailInput">
+                            <input type="email" placeholder="subscribe@mail.com"> 
+                            <input class="submitBtn" type="submit" value="→"> 
+                        </div>    
+                    </div>
+                    <div class="contactLinks">
+                        <p>Contact Us :</p>
+                        <a href="mailto:info@powerzest.in"><img src="images/mail.png" alt=""></a>
+                        <a href="tel:7738667167"><img src="images/call.png" alt=""></a>
+                    </div>
+                </div>
             </div>
         </container>
     </section>
